@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		FEF40D971DCC2EAF00F74529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF40D961DCC2EAF00F74529 /* AppDelegate.swift */; };
-		FEF40D991DCC2EAF00F74529 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF40D981DCC2EAF00F74529 /* ViewController.swift */; };
+		FEF40D991DCC2EAF00F74529 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF40D981DCC2EAF00F74529 /* MainVC.swift */; };
 		FEF40D9C1DCC2EAF00F74529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF40D9A1DCC2EAF00F74529 /* Main.storyboard */; };
 		FEF40D9E1DCC2EAF00F74529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF40D9D1DCC2EAF00F74529 /* Assets.xcassets */; };
 		FEF40DA11DCC2EAF00F74529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF40D9F1DCC2EAF00F74529 /* LaunchScreen.storyboard */; };
+		FEF40DAC1DCC4AAC00F74529 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEF40DAB1DCC4AAC00F74529 /* still time.ttf */; };
+		FEF40DAF1DCC4C2300F74529 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF40DAE1DCC4C2300F74529 /* VideoVC.swift */; };
+		FEF40DB11DCC4F5800F74529 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF40DB01DCC4F5800F74529 /* PartyCell.swift */; };
+		FEF40DB31DCC515600F74529 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF40DB21DCC515600F74529 /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FEF40D931DCC2EAF00F74529 /* App - PartyRock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App - PartyRock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF40D961DCC2EAF00F74529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEF40D981DCC2EAF00F74529 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEF40D981DCC2EAF00F74529 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FEF40D9B1DCC2EAF00F74529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEF40D9D1DCC2EAF00F74529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEF40DA01DCC2EAF00F74529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEF40DA21DCC2EAF00F74529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF40DAB1DCC4AAC00F74529 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		FEF40DAE1DCC4C2300F74529 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		FEF40DB01DCC4F5800F74529 /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		FEF40DB21DCC515600F74529 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		FEF40D951DCC2EAF00F74529 /* App - PartyRock */ = {
 			isa = PBXGroup;
 			children = (
+				FEF40DAD1DCC4AD400F74529 /* Files */,
+				FEF40DAA1DCC45D000F74529 /* View */,
+				FEF40DA91DCC45C800F74529 /* Model */,
+				FEF40DA81DCC456E00F74529 /* Controller */,
 				FEF40D961DCC2EAF00F74529 /* AppDelegate.swift */,
-				FEF40D981DCC2EAF00F74529 /* ViewController.swift */,
+				FEF40D9F1DCC2EAF00F74529 /* LaunchScreen.storyboard */,
 				FEF40D9A1DCC2EAF00F74529 /* Main.storyboard */,
 				FEF40D9D1DCC2EAF00F74529 /* Assets.xcassets */,
-				FEF40D9F1DCC2EAF00F74529 /* LaunchScreen.storyboard */,
 				FEF40DA21DCC2EAF00F74529 /* Info.plist */,
 			);
 			path = "App - PartyRock";
+			sourceTree = "<group>";
+		};
+		FEF40DA81DCC456E00F74529 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEF40D981DCC2EAF00F74529 /* MainVC.swift */,
+				FEF40DAE1DCC4C2300F74529 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FEF40DA91DCC45C800F74529 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEF40DB21DCC515600F74529 /* PartyRock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FEF40DAA1DCC45D000F74529 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEF40DB01DCC4F5800F74529 /* PartyCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FEF40DAD1DCC4AD400F74529 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEF40DAB1DCC4AAC00F74529 /* still time.ttf */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF40DA11DCC2EAF00F74529 /* LaunchScreen.storyboard in Resources */,
+				FEF40DAC1DCC4AAC00F74529 /* still time.ttf in Resources */,
 				FEF40D9E1DCC2EAF00F74529 /* Assets.xcassets in Resources */,
 				FEF40D9C1DCC2EAF00F74529 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF40D991DCC2EAF00F74529 /* ViewController.swift in Sources */,
+				FEF40DAF1DCC4C2300F74529 /* VideoVC.swift in Sources */,
+				FEF40D991DCC2EAF00F74529 /* MainVC.swift in Sources */,
+				FEF40DB31DCC515600F74529 /* PartyRock.swift in Sources */,
+				FEF40DB11DCC4F5800F74529 /* PartyCell.swift in Sources */,
 				FEF40D971DCC2EAF00F74529 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
