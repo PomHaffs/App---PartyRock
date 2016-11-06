@@ -39,13 +39,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         partyRocks.append(p5)
         
         tableView.delegate = self
-        tableView.data = self
+        tableView.dataSource = self
   
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: indexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //the indentifier refs to the cell and you MUST name the ID from main storyboard
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PartyCell", for: indexPath) as? PartyCell {
             
             let partyRock = partyRocks[indexPath.row]
@@ -53,19 +52,24 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             cell.updateUI(partyRock: partyRock)
             
             return cell
-      
+            
         } else {
             return UITableViewCell()
         }
-        
-        return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, cellForRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //this is providing the number of rows needed
         return partyRocks.count
     }
-
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let partyRock = partyRocks[indexPath.row]
+        
+        performSegue(withIdentifier: "VideoVC", sender: partyRock)
+        
+    }
+    
 }
 

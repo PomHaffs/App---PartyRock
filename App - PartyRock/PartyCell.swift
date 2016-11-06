@@ -22,6 +22,21 @@ class PartyCell: UITableViewCell {
     //This comes from PartyRock
     func updateUI(partyRock: PartyRock) {
         VideoTitle.text = partyRock.videoTitle
+        
+        let url = URL(string: partyRock.imageURL)!
+        
+        //Async is background
+        DispatchQueue.global().async {
+            do {
+                let data = try Data(contentsOf: url)
+                //sync means the main area
+                DispatchQueue.global().sync {
+                    self.VideoPreviewImage.image = UIImage(data: data)
+                }
+            } catch {
+                //handle the error here
+            }
+        }
     }
     
 }
