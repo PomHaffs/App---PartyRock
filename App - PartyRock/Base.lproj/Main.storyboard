@@ -154,14 +154,30 @@
                                     <constraint firstAttribute="height" constant="250" id="chc-fV-pIR"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjS-b5-FZz">
+                                <rect key="frame" x="21" y="300" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Dfr-dL-5B1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92146831750869751" green="0.92162626981735229" blue="0.92145836353302002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Cyg-qL-4tT" firstAttribute="leading" secondItem="S22-qg-G0E" secondAttribute="leading" id="9F1-S9-dXh"/>
+                            <constraint firstItem="zjS-b5-FZz" firstAttribute="trailing" secondItem="S22-qg-G0E" secondAttribute="trailingMargin" constant="5" id="OqE-SF-dMA"/>
                             <constraint firstItem="Cyg-qL-4tT" firstAttribute="top" secondItem="S22-qg-G0E" secondAttribute="top" id="kbY-RO-MoI"/>
+                            <constraint firstItem="zjS-b5-FZz" firstAttribute="leading" secondItem="S22-qg-G0E" secondAttribute="leadingMargin" constant="5" id="y7C-Zy-gGJ"/>
                             <constraint firstAttribute="trailing" secondItem="Cyg-qL-4tT" secondAttribute="trailing" id="zUb-Hi-hQ6"/>
+                            <constraint firstItem="zjS-b5-FZz" firstAttribute="top" secondItem="Cyg-qL-4tT" secondAttribute="bottom" constant="50" id="zwy-vQ-TKm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="zjS-b5-FZz" id="QHC-KZ-ij1"/>
+                        <outlet property="webView" destination="Cyg-qL-4tT" id="VdB-be-GXp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMD-8c-8Cd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
