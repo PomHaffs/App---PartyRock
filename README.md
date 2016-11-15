@@ -1,8 +1,12 @@
-# App---PartyRock
-Simplified personal app with images and videos
+### App---PartyRock
 
-##TableViews
-##Downloaded images online async from a background thread linked to main UI thread
-##Custom and recycled cell code
-##HTML injection - videos
-##passing info from pages
+##Description: 
+PartyRock is a single page app providing info on band including song titles and links to embedded online videos.
+
+##Things I have learnt in this project:
+TableViewController and TableViewCells
+Online image download from background thread linked to main UI
+HTML injection of embedded videos
+Parsing information between pages
+Dequeuing for multiple cell views
+MVC and ReSTful application architecture 
